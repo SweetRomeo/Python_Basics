@@ -101,3 +101,26 @@ ax.plot(x,x ** 3, label = 'X Cubed')
 ax.legend(loc = 0)
 #ax.legend(loc = 10(center))
 #ax.legend(loc = (0.1,0.1))
+#-------------------------------------------
+#Matplotlib - Part 3
+import matplotlib.pyplot as plt
+import numpy as np
+x = np.linspace(0,5,11)
+y = x ** 2
+
+fig = plt.figure()
+
+ax = fig.add_axes([0,0,1,1])
+
+ax.plot(x, y, color = 'purple',linewidth = 3, ls = '-', marker = 'o',markersize = 20,
+       markerfacecolor = 'yellow', markeredgewidth = 3, markeredgecolor = 'green') 
+#ax.plot(x, y, color = 'blue')
+#ax.plot(x, y, color = '#ff8c00',linewidth(lw) = 3, linestyle(ls) = '--')
+#linewidth çizgi kalınlığını verirken alpha çizgi belirginliğini verir
+#alpha arttıkça belirginlik artar maksimum değeri 1'dir.
+#linestyle ise çizgi tipini belirtir. Örneğin linestyle = '--' parametresi geçildiği takdirde
+#Bu kesikli çizgi anlamına gelmektedir.
+#Kısaltma olarak linestyle için ls, linewidth için lw ifadeleri kullanılabilir.
+#maker parametresi ise grafikteki kritik noktaları işaretleyen semboller oluşturur.
+#Bu semboller farklı tipte olabilir. makersize parametresi ise oluşturulan makerların büyüklüklerini belirler.
+#
